@@ -1,0 +1,92 @@
+.user-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background: lightskyblue;
+    height: 40vh;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#userCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.user-card {
+    display: flex;
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: sans-serif;
+    gap: 10px;
+}
+
+.user-card .row {
+    display: block; 
+    padding: 0.25rem;
+}
+
+@media screen and (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+    }
+    .user-card {
+        flex-direction: column;
+    }
+    .user-card .row {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+    }
+    .user-card {
+        flex-direction: column;
+    }
+    .user-card .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .button-container {
+        flex-direction: row;
+    }
+    .user-card {
+        flex-direction: row;
+    }
+    .user-card .row {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) {
+  .user-card {
+    flex-direction: row; 
+  }
+
+  .user-card .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
